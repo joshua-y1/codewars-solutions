@@ -6,15 +6,12 @@ function getSum(a, b)
 {
    //Good luck!
   let arr = []
-  if (a === b){
-    return a
-  } else if (Math.abs(a-b) === 1){
-    return a + b
-  } else {
-    for (i=a; i<=b; i++){
-      arr.push(i)
-    }
-    return arr.reduce((acc, num) => acc + num)
+  const min = Math.min(a,b)
+  const max = Math.max(a,b)
+  
+  for (let i=min; i<=max; i++){
+    arr.push(i)
   }
+  return arr.reduce((acc, num) => acc + num)
 }
 
