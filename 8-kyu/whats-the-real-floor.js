@@ -4,14 +4,12 @@
 
 function getRealFloor(n) {
   let value = 0
-  if (n < 0) {
+  if (n <= 0) {
     value = n
-  } else if (n === 0) {
-    value = 0
-  } else if (n === 15) {
-    value = 13
-  } else {
+  } else if (n < 13) {
     value = n - 1
+  } else {
+    value = n -2
   }
   return value
 }
