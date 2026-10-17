@@ -9,7 +9,7 @@ function getRealFloor(n) {
   } else if (n < 13) {
     value = n - 1
   } else {
-    value = n -2
+    value = n - 2
   }
   return value
 }
